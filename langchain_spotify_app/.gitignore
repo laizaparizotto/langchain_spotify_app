@@ -168,4 +168,4 @@ poetry.toml
 .ruff_cache/
 
 #virtual environment
-langchain_spotify_app
+langchain_spotify_app/venv/
