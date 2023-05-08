@@ -13,4 +13,4 @@ def tool_add_song_to_queue_by_song_name():
     return Tool(name="Add to queue", func=lambda song_name: add_song_to_queue_by_song_name(song_name), description=f"""Add the song to the queue. Action Input is a string of song_name.""", return_direct=True)
 
 def tool_pause_song():
-    return Tool(name="Pause music", func=lambda tool_input: pause_music(None), description="Stop music", return_direct=True)
+    return Tool(name="Pause music", func=lambda tool_input: pause_music(None), description="Stop music. Action Input is a string = None", return_direct=True)
