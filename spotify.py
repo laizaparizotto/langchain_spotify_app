@@ -87,7 +87,7 @@ def start_music():
         return "Error starting playback"
 
 
-def pause_music():
+def pause_music(tool_input):
     try:
         sp.pause_playback()
         return "Playback paused!"
