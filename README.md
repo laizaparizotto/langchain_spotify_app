@@ -2,31 +2,35 @@
 
 This is a chat to play songs on spotify using Langchain Agents.
 
-Spotify GPT Agent
-#Setup
-Sign up for Spotify and Spotify API (developer.spotify.com)
+# Setup
+- Sign up for Spotify and Spotify API (developer.spotify.com)
 
-Sign up for OpenAI API Key
+- Create an app on your spotify developer account and and save "client id", "client secret".
 
-Create a .env file and put these values in
+- As we are running this repository locally, select a random redirect URI i.e. "http://localhost/". (will be updated later)
 
+- Sign up for OpenAI API Key
+
+- Clone git repo.
+
+- Create a .env file and write these values in
+
+```
 OPENAI_API_KEY=
 SPOTIFY_CLIENT_ID=
 SPOTIFY_CLIENT_SECRET=
 SPOTIFY_REDIRECT_URI=
-Create a new Python virtual environment
+```
 
-python -m venv spotify-chat (Mac)
-py -m venv spotify-chat (Windows 11)
-Start virtual environment manually by running:
+- Create a new Python virtual environment
 
-source spotify-chat/bin/activate (Mac)
+py -m venv langchain_spotify_app (Windows 11)
 
-.\spotify-chat\Scripts\activate (Windows 11)
+- Start virtual environment manually by running:
 
-Or start it automatically by opening a new Terminal or Powershell and entering the project's directory. Install Python requirements in the project repository: pip install -r requirements.txt
+.\langchain_spotify_app\Scripts\activate (Windows 11)
 
-If new dependencies are added, add them manually to requirements.txt
+- Install Python requirements in the project repository: pip install -r requirements.txt
 
-Usage
-To start: py main.py (Windows 11) or python main.py (Mac)
+# Usage
+To start: py main.py (Windows 11)
